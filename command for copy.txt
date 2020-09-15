@@ -1,0 +1,13 @@
+https://s3-ap-northeast-1.amazonaws.com/tarohiro-temp/20181002-ecs-cloud9-cicd-handson/assets/cloudformation.yml
+
+FROM php:7.0-apache
+COPY src/ /var/www/html/
+
+<html>
+  <head>
+    <title>PHP Sample</title>
+  </head>
+  <body>
+    <?php echo gethostname(); ?>
+  </body>
+</html>
