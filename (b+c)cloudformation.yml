@@ -84,7 +84,7 @@ Resources:
   EipForNatGW1:
     Type: AWS::EC2::EIP
     Properties:
-      Domain: VPC
+      Domain: vpc
   NatGW1:
     Type: AWS::EC2::NatGateway
     DependsOn : EipForNatGW1
@@ -97,7 +97,7 @@ Resources:
   EipForNatGW2:
     Type: AWS::EC2::EIP
     Properties:
-      Domain: VPC
+      Domain: vpc
   NatGW2:
     Type: AWS::EC2::NatGateway
     DependsOn : EipForNatGW2
